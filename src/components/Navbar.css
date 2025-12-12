@@ -1,28 +1,23 @@
+/*====================
+      Layout
+  ====================*/
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  border-bottom: 1px solid #515151;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.logo-wrapper {
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 7rem;
-  width: 7rem;
-}
+/*====================
+      Typography
+  ====================*/
 
 nav ul {
   list-style: none;
@@ -33,38 +28,47 @@ nav ul {
 }
 
 nav li {
-  font-size: 1.1rem;
+  font-size: var(--font-size-xmd);
 }
 
 nav a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.87);
-  font-weight: 500;
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
   transition: color 0.2s ease;
+}
+nav a:hover {
+  color: var(--color-primary);
 }
 
 nav span {
-  border: 2px solid #213547;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ff6600;
+  border: 2px solid var(--color-text);
+  font-weight: var(--font-weight-bold);
 }
 nav a:hover span {
-  border-color: #ff6600;
+  border-color: var(--color-primary);
 }
 
+/*====================
+      Utilities
+  ====================*/
+
+.logo-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo-wrapper:hover {
-  box-shadow: 0 0 5rem #72d0c8aa;
+  box-shadow: 0 0 5rem var(--color-secondary);
 }
 
-@media (prefers-color-scheme: light) {
-  .navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
-  }
-  nav a {
-    color: #213547;
-  }
+.logo {
+  height: 7rem;
+  width: 7rem;
+}
+
+.hidden {
+  visibility: hidden;
 }

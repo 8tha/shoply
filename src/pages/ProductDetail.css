@@ -1,3 +1,7 @@
+/*====================
+      Layout
+  ====================*/
+
 .product-detail {
   display: flex;
   flex-wrap: wrap;
@@ -8,17 +12,10 @@
 }
 
 .product-detail .left {
-  flex: 1 1 400px; /* cresce ma minimo 400px */
+  flex: 1 1 400px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-}
-
-.product-detail .left img {
-  width: 100%;
-  max-width: 400px;
-  object-fit: contain;
-  border-radius: 8px;
 }
 
 .product-detail .right {
@@ -28,47 +25,44 @@
   justify-content: flex-start;
 }
 
+/*====================
+      Typography
+  ====================*/
+
 .product-detail .right h2 {
-  font-size: 2rem;
+  font-size: var(--font-size-xlg);
   margin-bottom: 12px;
 }
 
 .product-detail .right h3 {
-  font-size: 1.6rem;
-  color: #ff6600;
+  font-size: var(--font-size-lg);
+  color: --color-primary;
   margin-bottom: 20px;
 }
 
 .product-detail .right p {
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   margin-bottom: 24px;
   line-height: 1.5;
 }
 
+/*====================
+      Utilities
+  ====================*/
+
 .product-detail .right button {
   padding: 15px 25px;
-  color: white;
+  color: --dark-text;
   border: none;
   border-radius: 6px;
-  font-size: 1.2rem;
+  font-size: var(--font-size-xmd);
   cursor: pointer;
   margin-top: 10px;
 }
 
-/* Responsive: impila le colonne su mobile */
-@media (max-width: 768px) {
-  .product-detail {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .product-detail .left,
-  .product-detail .right {
-    flex: 1 1 100%;
-  }
-
-  .product-detail .right {
-    align-items: center;
-    text-align: center;
-  }
+.product-detail .left img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+  border-radius: 8px;
 }

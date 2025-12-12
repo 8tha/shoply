@@ -1,12 +1,15 @@
+/*====================
+      Layout
+  ====================*/
+
 .checkout {
   max-width: 500px;
-  margin: 2rem auto;
+  margin: 4rem auto;
   padding: 2rem;
-  border: 1px solid #484848;
-  background-color: #353535;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  font-family: Arial, sans-serif;
+  box-shadow: var(--color-shadow);
 }
 
 .checkout form {
@@ -18,14 +21,8 @@
 
 .checkout input {
   padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
+  font-size: var(--font-size-md);
+  border: 1px solid var(--color-border);
   border-radius: 6px;
   transition: border-color 0.2s;
-}
-
-@media (prefers-color-scheme: light) {
-  .checkout {
-    background-color: #ddd;
-  }
 }

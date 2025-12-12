@@ -17,7 +17,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/cart">
-              Cart {totItems > 0 && <span className="badge">{totItems}</span>}
+              Cart{" "}
+              <span className={`badge ${totItems <= 0 ? "hidden" : ""}`}>
+                {totItems}
+              </span>
             </Link>
           </li>
         </ul>
