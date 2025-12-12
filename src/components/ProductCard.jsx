@@ -10,7 +10,7 @@ const ProductCard = ({ p }) => {
       <img src={p.image} alt={p.title} />
       <div className="in-line">
         <h3 className="product-price">${p.price}</h3>
-        {p.quantity && <h3 className="product-quantity">{p.quantity}</h3>}
+        {p.quantity && <h3 className="product-quantity badge">{p.quantity}</h3>}
       </div>
       <h2>
         <Link to={`/product/${p.id}`}>{p.title}</Link>

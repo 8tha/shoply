@@ -75,3 +75,14 @@ button:hover {
 .bottom {
   margin-top: auto;
 }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.7em;
+  padding: 3px;
+}

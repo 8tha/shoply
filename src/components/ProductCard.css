@@ -50,8 +50,6 @@
 .product-quantity {
   background-color: #ff6600;
   color: #262626;
-  padding: 0rem 0.5rem;
-  border-radius: 50%;
 }
 
 @media (prefers-color-scheme: light) {
