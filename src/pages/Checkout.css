@@ -23,3 +23,9 @@
   border-radius: 6px;
   transition: border-color 0.2s;
 }
+
+@media (prefers-color-scheme: light) {
+  .checkout {
+    background-color: #ddd;
+  }
+}
