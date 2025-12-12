@@ -21,7 +21,7 @@ const ProductCard = ({ p }) => {
             addToCart(p);
           }}
         >
-          Add to Cart
+          {cart.find((product) => p.id === product.id) ? "Add" : "Add to Cart"}
         </button>
         {cart.find((product) => product.id === p.id) && (
           <button
@@ -29,7 +29,7 @@ const ProductCard = ({ p }) => {
               removeFromCart(p);
             }}
           >
-            Remove from cart
+            Remove
           </button>
         )}
       </div>
